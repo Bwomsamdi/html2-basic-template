@@ -63,24 +63,30 @@
         <div class="slider__text-container slider__text-container--current">
           <h2 class="slider__title">Декаф Флэт Уайт</h2>
           <span class="slider__badge badge">Новинка!</span>
-            <p>Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <p class="slider__price">295₽<b>225₽</b></p>
-            <a class="slider__order button order-js" href="#">Заказать</a>
+          <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__price-container">
+            <p class="slider__price"><s>295₽</s> <b>225₽</b></p>
+            <a class="slider__order button" href="#">Заказать</a>
+          </div>
         </div>
-        <div class="slider__text-container">
+        <div class="slider__text-container slider__text-container--visually-hidden">
             <h2 class="slider__title">Лавандовый Латте</h2>
             <span class="slider__badge badge">Новинка!</span>
-              <p>Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-              <p class="slider__price">285₽<b>265₽</b></p>
-              <a class="slider__order button order-js" href="#">Заказать</a>
-          </div>
-          <div class="slider__text-container">
+            <p class="slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="slider__price-container">
+              <p class="slider__price"><s>285₽</s> <b>265₽</b></p>
+              <a class="slider__order button" href="#">Заказать</a>
+            </div>
+        </div>
+        <div class="slider__text-container slider__text-container--visually-hidden">
             <h2 class="slider__title">Тройной Эспрессо</h2>
             <span class="slider__badge badge">Новинка!</span>
-              <p>Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-              <p class="slider__price">395₽<b>375₽</b></p>
-              <a class="slider__order button order-js" href="#">Заказать</a>
-          </div>
+            <p class="slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="slider__price-container">
+              <p class="slider__price"><s>395₽</s> <b>375₽</b></p>
+              <a class="slider__order button" href="#">Заказать</a>
+            </div>
+        </div>
         <ul class="slider__image-container">
             <li class="slider__image slider__image--current">
               <button class="slider__button slider__button--prev" type="button">
@@ -107,7 +113,7 @@
                 <span class="visually-hidden">Следующий вкус.</span>
               </button>
               </li>
-              <li class="slider__image">
+              <li class="slider__image slider__image--visually-hidden">
                 <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/lavender-latte-desktop.webp 1x, img/lavender-latte-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/lavender-latte-tablet.webp 1x, img/lavender-latte-tablet@2x.webp 2x">
@@ -122,7 +128,7 @@
                   alt="Лавандовый Латте.">
                 </picture>
               </li>
-              <li class="slider__image">
+              <li class="slider__image slider__image--visually-hidden">
                 <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/triple-espresso-desktop.webp 1x, img/triple-espresso-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-espresso-tablet.webp 1x, img/triple-espresso-tablet@2x.webp 2x">
@@ -137,26 +143,26 @@
                 alt="Тройной Эспрессо.">
             </picture>
               </li>
-          </ul>
-          <div class="slider__lists-container">
-              <ol class="slider__pagination">
-                <li class="slider__pagination-item">
-                  <button class="slider__pagination-button slider__pagination-button--current" type="button">
-                    <span class="visually-hidden">1 вкус.</span>
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 вкус.</span>
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 вкус.</span>
-                  </button>
-                </li>
-              </ol>
-          </div>
+        </ul>
+        <div class="slider__lists-container">
+          <ol class="slider__pagination">
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button slider__pagination-button--current" type="button">
+                <span class="visually-hidden">1 вкус.</span>
+              </button>
+            </li>
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">2 вкус.</span>
+              </button>
+            </li>
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">3 вкус.</span>
+              </button>
+            </li>
+          </ol>
+        </div>
       </section>
       <section class="about">
           <div class="about__wrapper">

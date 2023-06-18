@@ -1,0 +1,165 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: #f3ebe1;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background: linear-gradient(to top, #ffffff 10%, #ffffff 30%, #f3ebe1 30%, #f3ebe1 90%);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    flex-direction: row;
+    padding: 30px 40px 84px 40px;
+    background: #f3ebe1;
+  }
+}
+
+.slider__text-container {
+  position: relative;
+  order: 2;
+
+  &--visually-hidden {
+    .visually-hidden();
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    align-self: center;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.slider__image {
+  .normalize-list();
+
+  &--visually-hidden {
+    .visually-hidden();
+  }
+}
+
+.slider__image img {
+  @media (min-width: @tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.slider__pagination {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  .normalize-list();
+
+  @media (max-width: 1439px) {
+    .visually-hidden();
+  }
+}
+
+.slider__pagination-item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider__pagination-button {
+  width: 62px;
+  height: 4px;
+  background-color: #ffffff;
+  border: none;
+
+  &--current {
+    background-color: @color-accent;
+  }
+}
+
+.slider__title {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0;
+  padding: 20px 20px 10px 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.slider__badge {
+  position: absolute;
+  top: 0;
+  left: 46%;
+
+  @media (min-width: @desktop-width) {
+    left: 30px;
+  }
+}
+
+.slider__text {
+  margin: 0;
+  padding: 0 20px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.slider__price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.slider__price {
+  font-size: 16px;
+  line-height: 1;
+  color: @color-accent;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.slider__price b {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.slider__button {
+  position: absolute;
+}
+
+&--prev {
+  left: 0;
+}
