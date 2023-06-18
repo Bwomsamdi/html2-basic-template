@@ -76,7 +76,7 @@ export function optimizeVector () {
 export function createStack () {
   return gulp.src('source/img/icons/**/*.svg')
     .pipe(svgo())
-    .pipe(stacksvg())
+    .pipe(stacksvg({ output: 'sprite.svg' }))
     .pipe(gulp.dest('build/img/icons'));
 }
 
