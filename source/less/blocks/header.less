@@ -1,8 +1,11 @@
 .header {
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 40px;
@@ -35,11 +38,13 @@
   display: block;
   width: 32px;
   //height: 35px;
-  //position: relative;
+  position: absolute;
+  top: 12px;
   //margin-top: 22px;
   //margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    position: static;
     justify-content: start;
     width: 82px;
     //height: 46px;
