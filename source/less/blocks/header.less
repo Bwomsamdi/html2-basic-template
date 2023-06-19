@@ -20,36 +20,23 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    //position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    //justify-content: space-between;
-    //position: relative;
-    //height: 88px;
   }
 }
 
 .header__logo {
   display: block;
   width: 32px;
-  //height: 35px;
   position: absolute;
   top: 12px;
-  //margin-top: 22px;
-  //margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     position: static;
     justify-content: start;
     width: 82px;
-    //height: 46px;
-    //margin-top: 0;
-    //margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,19 +44,6 @@
     align-items: center;
     .normalize-link();
     min-width: 316px;
-    //height: 72px;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:visited {
-    color: @color-grey;
   }
 }
 
