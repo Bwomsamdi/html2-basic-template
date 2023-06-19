@@ -1,0 +1,24 @@
+.map__frame {
+  position: relative;
+  background-image: url("../../img/map-mobile.webp");
+  background-position: center;
+  border: none;
+  display: block;
+  width: 100%;
+  //margin-right: -20px;
+  //margin-left: -20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/map-tablet.webp");
+    height: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/map-desctop.webp");
+    height: 540px;
+  }
+}
+
+.map__toggle {
+  .visually-hidden();
+}
