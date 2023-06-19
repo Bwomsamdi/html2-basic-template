@@ -1,0 +1,72 @@
+.products__list {
+  .normalize-list();
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 349px);
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 317px);
+    padding-bottom: 60px;
+  }
+}
+
+.products__card {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px 20px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.products__card-link {
+  .normalize-link();
+}
+
+.products__card-title {
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.products__card-description {
+  text-align: left;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.products__card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__card-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.products__card-button {
+  background-image: url("../../img/icons/sprite.svg#in-cart");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px center;
+  padding-left: 46px;
+}

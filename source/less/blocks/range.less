@@ -1,0 +1,41 @@
+.range__input {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: @color-grey;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  padding: 8px 0 8px 10px;
+  max-width: 118px;
+}
+
+.range__filter-label {
+  &:first-child {
+    margin-right: 18px;
+  }
+
+  &:first-child::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    text-align: center;
+    top: 19px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: @color-grey;
+  }
+
+  &:last-child {
+    margin-left: 18px;
+  }
+}
+
+.range__wrapper-inputs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
