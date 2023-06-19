@@ -6,24 +6,23 @@
   .normalize-list();
 
   @media (min-width: @tablet-width) {
-    //display: flex;
-    //flex-wrap: wrap;
     width: 180px;
     align-self: center;
-    //justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
     margin-left: auto;
     margin-right: 0;
-    //height: 88px;
   }
 }
 
 .user-list__item {
-  //border-top: 1px solid #ececec;
   padding: 22px;
+
+  &:active {
+    background-color: #f0ebff;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 32px 20px 32px 20px;
@@ -35,14 +34,14 @@
     &:last-child {
       margin-left: 0;
     }
-  }
 
-  &:hover .user-list__item-link--cart {
-    opacity: 0.6;
-  }
+    &:hover .user-list__item-link {
+      color: @color-accent;
+    }
 
-  &:active .user-list__item-link--cart {
-    opacity: 0.3;
+    &:hover .user-list__icon {
+      fill: @color-accent;
+    }
   }
 }
 
@@ -54,52 +53,22 @@
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  //padding: 29px 0 27px 0;
   .normalize-link();
 
-  @media (max-width: @mobile-width-only) {
-    //padding-bottom: 28px;
-  }
+  @media (min-width: @desktop-width) {
+    &:focus {
+      color: @color-accent;
+      outline: none;
+    }
 
-  @media (min-width: @tablet-width) {
-    //padding-top: 36px;
-    //padding-right: 32px;
-    //padding-left: 32px;
-  }
-
-  @media (min-width: @tablet-width) and (max-width: 1149px) {
-    //padding-right: 31px;
-    //padding-bottom: 35px;
-    //padding-left: 32px;
-  }
-
-  &--cart {
-    //padding-right: 0;
-  }
-
-  &:hover .user-list__icon {
-    fill: rgba(99, 209, 187, 1);
-  }
-
-  &:active {
-    fill: rgba(99, 209, 187, 1);
-    opacity: 0.3;
+    &:focus .user-list__icon {
+      fill: @color-accent;
+    }
   }
 }
 
 .user-list__icon {
-  //margin-right: 21px;
-
-  @media (max-width: @mobile-width-only) {
-    //margin-left: 3px;
-  }
-
-  @media (min-width: @tablet-width) {
-    //margin-right: 0;
-    //display: inline-block;
-    //vertical-align: top;
-    //margin-right: 8px;
-  }
+  fill: #333333;
 
   @media (min-width: @desktop-width) {
     margin-right: 8px;

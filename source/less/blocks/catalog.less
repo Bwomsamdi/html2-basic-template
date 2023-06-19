@@ -117,10 +117,11 @@
 .catalog__sorting {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    justify-content: flex-end;
     padding-bottom: 30px;
   }
 
@@ -142,6 +143,12 @@
   color: @color-accent;
   border: none;
   background-color: transparent;
+  padding: 5px 0 4px 10px;
+
+  &:hover {
+    background-color: #f0ebff;
+    border-radius: 4px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: 10px;

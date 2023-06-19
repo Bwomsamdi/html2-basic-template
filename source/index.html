@@ -211,7 +211,7 @@
                   </div>
                   <div class="range__wrapper-inputs">
                     <label class="range__filter-label">
-                      <input class="range__input range__input--disabled" type="number" value="0" name="min-price">
+                      <input class="range__input" type="number" name="min-price" placeholder="0">
                     </label>
                     <label class="range__filter-label">
                       <input class="range__input" type="number" value="900" name="max-price">
@@ -254,14 +254,14 @@
                     <span class="control__label">Только растительное</span></label>
                 </li>
                 <li class="catalog__filter-item">
-                  <label class="control">
+                  <label class="control control--disabled">
                     <input
                       class="visually-hidden control__input"
                       type="radio"
                       name="product-group"
-                      value="without-milk">
+                      value="without-milk" disabled>
                     <span class="control__mark"></span>
-                    <span class="control__label control__label--disabled">Без молока</span></label>
+                    <span class="control__label">Без молока</span></label>
                 </li>
               </ul>
             </fieldset>
@@ -304,12 +304,13 @@
                     <span class="control__label">Коста-Рика</span></label>
                 </li>
                 <li class="catalog__filter-item">
-                  <label class="control">
+                  <label class="control control--disabled">
                     <input class="visually-hidden control__input"
                     type="checkbox"
-                    name="peru">
+                    name="peru"
+                    disabled>
                     <span class="control__mark"></span>
-                    <span class="control__label control__label--disabled">Перу</span></label>
+                    <span class="control__label">Перу</span></label>
                 </li>
               </ul>
             </fieldset>
@@ -455,6 +456,8 @@
             <ul class="pagination__list">
               <li class="pagination__item pagination__item--prev">
                 <a class="pagination__link">
+                  <svg class="pagination__arrow" aria-hidden="true" focusable="false" width="10" height="10">
+                    <use href="img/icons/sprite.svg#arrow"></use></svg>
                   <span class="pagination__description">Назад</span>
                 </a>
               </li>
@@ -469,6 +472,8 @@
               </li>
               <li class="pagination__item pagination__item--next">
                 <a class="pagination__link" href="#">
+                  <svg class="pagination__arrow" aria-hidden="true" focusable="false" width="10" height="10">
+                    <use href="img/icons/sprite.svg#arrow"></use></svg>
                   <span class="pagination__description">Вперёд</span>
                 </a>
               </li>

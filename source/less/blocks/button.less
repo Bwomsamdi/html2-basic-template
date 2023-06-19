@@ -17,12 +17,25 @@
     background-color: #ffffff;
   }
 
-  &:hover {
-    background-color: #444444;
+  &:hover,
+  &:focus {
+    background-color: #9070ec;
     color: #ffffff;
+    outline: none;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    background-color: #593cac;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: @color-grey;
+    color: #ffffff;
+  }
+
+  &--reset:disabled {
+    background-color: #e2e2e2;
+    color: #ffffff;
   }
 }

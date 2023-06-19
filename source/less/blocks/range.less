@@ -2,11 +2,27 @@
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  color: @color-grey;
   border: 2px solid #9070ec;
   border-radius: 4px;
   padding: 8px 0 8px 10px;
   max-width: 118px;
+
+  &::placeholder {
+    color: @color-grey;
+  }
+
+  &:hover {
+    border-color: #593cac;
+  }
+
+  &:focus {
+    outline-color: #593cac;
+  }
+
+  &:disabled {
+    border-color: #e2e2e2;
+    color: @color-grey;
+  }
 }
 
 .range__filter-label {
