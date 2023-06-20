@@ -1,22 +1,27 @@
 .slider {
+  background-color: #f3ebe1;
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    background: linear-gradient(to top, #ffffff 10%, #ffffff 30%, #f3ebe1 30%, #f3ebe1 90%);
+  }
+}
+
+.slider__wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 60px;
-  background-color: #f3ebe1;
 
   @media (min-width: @tablet-width) {
     padding-top: 80px;
     padding-bottom: 60px;
-    background: linear-gradient(to top, #ffffff 10%, #ffffff 30%, #f3ebe1 30%, #f3ebe1 90%);
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     flex-direction: row;
-    padding: 30px 40px 84px 40px;
-    background: #f3ebe1;
+    padding: 30px 40px 84px 65px;
   }
 }
 
@@ -63,7 +68,11 @@
 .slider__pagination {
   position: absolute;
   bottom: 70px;
+  right: 0;
+  left: 0;
+  margin: auto;
   display: flex;
+  justify-content: center;
   .normalize-list();
 
   @media (max-width: 1439px) {
