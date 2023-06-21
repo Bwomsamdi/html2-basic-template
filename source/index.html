@@ -6,6 +6,7 @@
     <title>HTML Academy: Drink2Go</title>
     <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -63,41 +64,20 @@
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков.</h1>
       <section class="slider">
         <div class="container">
-          <div class="slider__wrapper">
-            <div class="slider__text-container slider__text-container--current">
-              <h2 class="slider__title">Декаф Флэт Уайт</h2>
-              <span class="slider__badge badge">Новинка!</span>
-              <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <div class="slider__price-container">
-                <p class="slider__price"><s>295₽</s> <b>225₽</b></p>
-                <a class="slider__order button" href="#">Заказать</a>
-              </div>
-            </div>
-            <div class="slider__text-container slider__text-container--visually-hidden">
-                <h2 class="slider__title">Лавандовый Латте</h2>
-                <span class="slider__badge badge">Новинка!</span>
-                <p class="slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-                <div class="slider__price-container">
-                  <p class="slider__price"><s>285₽</s> <b>265₽</b></p>
-                  <a class="slider__order button" href="#">Заказать</a>
+          <div class="swiper myswiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__wrapper">
+                <div class="slider__text-container slider__text-container--current">
+                  <h2 class="slider__title">Декаф Флэт Уайт</h2>
+                  <span class="slider__badge badge">Новинка!</span>
+                  <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <div class="slider__price-container">
+                    <p class="slider__price"><s>295₽</s> <b>225₽</b></p>
+                    <a class="slider__order button" href="#">Заказать</a>
+                  </div>
                 </div>
-            </div>
-            <div class="slider__text-container slider__text-container--visually-hidden">
-                <h2 class="slider__title">Тройной Эспрессо</h2>
-                <span class="slider__badge badge">Новинка!</span>
-                <p class="slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-                <div class="slider__price-container">
-                  <p class="slider__price"><s>395₽</s> <b>375₽</b></p>
-                  <a class="slider__order button" href="#">Заказать</a>
-                </div>
-            </div>
-            <ul class="slider__image-container">
-                <li class="slider__image slider__image--current">
-                  <button class="slider__button slider__button--prev" type="button">
-                    <svg class="slider__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86474 13.1352c.25969.2597.68075.2597.94045 0 .25971-.2597.25971-.6807 0-.9404L5.60391 7.99351l4.20132-4.20132c.25967-.2597.25967-.68075-.00001-.94045-.25969-.2597-.68075-.2597-.94045 0L4.19606 7.52045l-.00284.00283c-.2597.2597-.2597.68075 0 .94045l4.67152 4.67147Z"/></svg>
-                    <span class="visually-hidden">Предыдущий вкус.</span>
-                  </button>
+                <div class="slider__image slider__image--current">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
@@ -111,62 +91,69 @@
                     height="280"
                     alt="Декаф Флэт Уайт.">
                 </picture>
-                  <button class="slider__button slider__button--next" type="button">
-                    <svg class="slider__icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86474 13.1352c.25969.2597.68075.2597.94045 0 .25971-.2597.25971-.6807 0-.9404L5.60391 7.99351l4.20132-4.20132c.25967-.2597.25967-.68075-.00001-.94045-.25969-.2597-.68075-.2597-.94045 0L4.19606 7.52045l-.00284.00283c-.2597.2597-.2597.68075 0 .94045l4.67152 4.67147Z"/></svg>
-                    <span class="visually-hidden">Следующий вкус.</span>
-                  </button>
-                  </li>
-                  <li class="slider__image slider__image--visually-hidden">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/lavender-latte-desktop.webp 1x, img/lavender-latte-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/lavender-latte-tablet.webp 1x, img/lavender-latte-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/lavender-latte-mobile.webp 1x, img/lavender-latte-mobile@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/lavender-latte-tablet.png 1x, img/lavender-latte-tablet@2x.png 2x">
-                    <img
-                      src="img/lavender-latte-mobile.png"
-                      srcset="img/lavender-latte-mobile@2x.png 2x"
-                      width="280"
-                      height="280"
-                      alt="Лавандовый Латте.">
-                    </picture>
-                  </li>
-                  <li class="slider__image slider__image--visually-hidden">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/triple-espresso-desktop.webp 1x, img/triple-espresso-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-espresso-tablet.webp 1x, img/triple-espresso-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/triple-espresso-mobile.webp 1x, img/triple-espresso-mobile@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/triple-espresso-desktop.png 1x, img/triple-espresso-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/triple-espresso-tablet.png 1x, img/triple-espresso-tablet@2x.png 2x">
-                    <img
-                    src="img/triple-espresso-mobile.png"
-                    srcset="img/triple-espresso-mobile@2x.png 2x"
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__wrapper">
+                <div class="slider__text-container">
+                  <h2 class="slider__title">Лавандовый Латте</h2>
+                  <span class="slider__badge badge">Новинка!</span>
+                  <p class="slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="slider__price-container">
+                    <p class="slider__price"><s>285₽</s> <b>265₽</b></p>
+                    <a class="slider__order button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="slider__image">
+                  <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/lavender-latte-desktop.webp 1x, img/lavender-latte-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/lavender-latte-tablet.webp 1x, img/lavender-latte-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/lavender-latte-mobile.webp 1x, img/lavender-latte-mobile@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/lavender-latte-tablet.png 1x, img/lavender-latte-tablet@2x.png 2x">
+                  <img
+                    src="img/lavender-latte-mobile.png"
+                    srcset="img/lavender-latte-mobile@2x.png 2x"
                     width="280"
                     height="280"
-                    alt="Тройной Эспрессо.">
+                    alt="Лавандовый Латте.">
+                  </picture>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__wrapper">
+                <div class="slider__text-container">
+                  <h2 class="slider__title">Тройной Эспрессо</h2>
+                  <span class="slider__badge badge">Новинка!</span>
+                  <p class="slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="slider__price-container">
+                    <p class="slider__price"><s>395₽</s> <b>375₽</b></p>
+                    <a class="slider__order button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="slider__image">
+                  <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/triple-espresso-desktop.webp 1x, img/triple-espresso-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-espresso-tablet.webp 1x, img/triple-espresso-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/triple-espresso-mobile.webp 1x, img/triple-espresso-mobile@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/triple-espresso-desktop.png 1x, img/triple-espresso-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/triple-espresso-tablet.png 1x, img/triple-espresso-tablet@2x.png 2x">
+                  <img
+                  src="img/triple-espresso-mobile.png"
+                  srcset="img/triple-espresso-mobile@2x.png 2x"
+                  width="280"
+                  height="280"
+                  alt="Тройной Эспрессо.">
                 </picture>
-                  </li>
-            </ul>
-            <div class="slider__lists-container">
-              <ol class="slider__pagination">
-                <li class="slider__pagination-item">
-                  <button class="slider__pagination-button slider__pagination-button--current" type="button">
-                    <span class="visually-hidden">1 вкус.</span>
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button class="slider__pagination-button" type="button">
-                    <span class="visually-hidden">2 вкус.</span>
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button class="slider__pagination-button" type="button">
-                    <span class="visually-hidden">3 вкус.</span>
-                  </button>
-                </li>
-              </ol>
+                </div>
+                </div>
+              </div>
             </div>
+            <div class="slider__lists-container swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -209,22 +196,13 @@
                 <fieldset class="catalog__filter-group">
                     <legend class="catalog__filter-title">Цена</legend>
                     <div class="range">
-                      <div class="range__scale">
-                        <div class="range__bar" style="left: 12px; width: 274px">
-                          <button class="range__toggle range__toggle--min" type="button">
-                            <span class="visually-hidden">Изменить минимальную цену.</span>
-                          </button>
-                          <button class="range__toggle range__toggle--max" type="button">
-                            <span class="visually-hidden">Изменить максимальную цену.</span>
-                          </button>
-                        </div>
-                      </div>
+                      <div class="range__slider"></div>
                       <div class="range__wrapper-inputs">
                         <label class="range__filter-label">
-                          <input class="range__input" type="number" name="min-price" placeholder="0">
+                          <input class="range__input range__input--upper" type="number" name="min-price" placeholder="0">
                         </label>
                         <label class="range__filter-label">
-                          <input class="range__input" type="number" value="900" name="max-price">
+                          <input class="range__input range__input--lower" type="number" value="900" name="max-price">
                         </label>
                       </div>
                     </div>
@@ -495,23 +473,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта.</h2>
-        <iframe
-          class="map__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-          width="320"
-          height="420"
-          allowfullscreen
-          title="Адрес магазина: Санкт-Петербург, набережная реки Карповки, дом 5">
-        </iframe>
-        <button class="map__toggle" type="button">
-          <span class="visually-hidden">Расположение магазина на карте.</span>
-          <img
-            class="map__toggle-image"
-            src="img/map-pin.svg"
-            width="38"
-            height="50"
-            alt="Метка магазина.">
-        </button>
+        <div class="map__frame" id="map"></div>
       </section>
     </main>
     <footer class="main-footer">
@@ -607,6 +569,9 @@
       </div>
     </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/nouislider.min.js"></script>
   <script src="js/script.js"></script>
   </body>
 </html>

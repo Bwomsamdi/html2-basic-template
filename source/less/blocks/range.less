@@ -37,7 +37,7 @@
     width: 8px;
     height: 2px;
     text-align: center;
-    top: 19px;
+    top: 40px;
     right: 0;
     left: 0;
     margin: auto;
@@ -54,4 +54,14 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+  }
 }
+
