@@ -46,16 +46,19 @@
 
 .about__list {
   .normalize-list();
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 32px;
     column-gap: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
+    padding-right: 0;
   }
 }
 
@@ -97,6 +100,7 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    max-width: 339px;
     padding-top: 0;
     padding-left: 82px;
     margin-bottom: 20px;
@@ -109,7 +113,9 @@
 
   @media (min-width: @desktop-width) {
     text-align: center;
-    padding-top: 82px;
+    max-width: auto;
+    min-width: 317px;
+    padding-top: 83px;
     padding-left: 0;
     background-position: top center;
   }
@@ -129,6 +135,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
+    max-width: 317px;
   }
 }
 
