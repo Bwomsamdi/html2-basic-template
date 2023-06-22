@@ -49,12 +49,14 @@
   font-size: 18px;
   line-height: 32px;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 4px;
 
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 36px;
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
 }
 
@@ -62,6 +64,10 @@
   text-align: left;
   margin: 0;
   padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .products__card-container {
@@ -76,9 +82,10 @@
 }
 
 .products__card-button {
+  font-size: 14px;
   background-image: url("../../img/icons/sprite.svg#in-cart");
   background-repeat: no-repeat;
   background-size: 20px 16px;
   background-position: 20px center;
-  padding-left: 46px;
+  padding: 11px 20px 11px 46px;
 }

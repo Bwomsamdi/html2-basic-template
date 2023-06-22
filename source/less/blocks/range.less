@@ -1,10 +1,14 @@
+.range {
+  padding-top: 10px;
+}
+
 .range__input {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   border: 2px solid #9070ec;
   border-radius: 4px;
-  padding: 8px 0 8px 10px;
+  padding: 10px 8px 8px 10px;
   max-width: 118px;
 
   &::placeholder {
@@ -23,11 +27,23 @@
     border-color: #e2e2e2;
     color: @color-grey;
   }
+
+  @media (min-width: @tablet-width) {
+    max-width: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 134px;
+  }
 }
 
 .range__filter-label {
   &:first-child {
     margin-right: 18px;
+
+    @media (min-width: @desktop-width) {
+      margin-right: 25px;
+    }
   }
 
   &:first-child::after {
@@ -37,15 +53,28 @@
     width: 8px;
     height: 2px;
     text-align: center;
-    top: 40px;
+    top: 55px;
     right: 0;
     left: 0;
     margin: auto;
     background-color: @color-grey;
+
+    @media (min-width: @tablet-width) {
+      top: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 50px;
+      width: 10px;
+    }
   }
 
   &:last-child {
     margin-left: 18px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 25px;
+    }
   }
 }
 
@@ -54,14 +83,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 24px;
+  padding-top: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
+    padding-top: 31px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 22px;
+    padding-top: 32px;
   }
 }
-

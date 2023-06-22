@@ -22,12 +22,12 @@ const inputs = [inputUpper, inputLower];
 
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
-    start: [0, 800],
+    start: [0, 900],
     connect: true,
     step: 1,
     range: {
       'min': 0,
-      'max': 900
+      'max': 970
     }
   });
 
@@ -49,7 +49,7 @@ if (rangeSlider) {
 }
 
 //map
-const map = L.map('map').setView([59.968137, 30.316272], 13);
+const map = L.map('map').setView([59.968137, 30.316272], 18);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

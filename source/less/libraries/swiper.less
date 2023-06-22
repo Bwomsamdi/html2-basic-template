@@ -16,12 +16,17 @@
 .swiper .swiper-button-prev {
   @media (max-width: 1439px) {
     align-items: start;
-    padding-top: 310px;
+    padding-top: 318px;
     left: 0;
   }
 
+  @media (min-width: @tablet-width) {
+    padding-top: 311px;
+  }
+
   @media (min-width: @desktop-width) {
-    left: -30px;
+    padding-top: 0;
+    left: -40px;
   }
 
   &:hover,
@@ -38,12 +43,17 @@
 .swiper .swiper-button-next {
   @media (max-width: 1439px) {
     align-items: start;
-    padding-top: 310px;
+    padding-top: 318px;
     right: 0;
   }
 
+  @media (min-width: @tablet-width) {
+    padding-top: 311px;
+  }
+
   @media (min-width: @desktop-width) {
-    right: -30px;
+    padding-top: 0;
+    right: -40px;
   }
 
   &:hover,
@@ -69,7 +79,7 @@
   }
 }
 
-.swiper  .swiper-pagination {
+.swiper .swiper-pagination {
   @media (max-width: 1439px) {
     .visually-hidden();
   }

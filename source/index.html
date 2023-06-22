@@ -6,7 +6,7 @@
     <title>HTML Academy: Drink2Go</title>
     <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -68,30 +68,30 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slider__wrapper">
-                <div class="slider__text-container slider__text-container--current">
-                  <h2 class="slider__title">Декаф Флэт Уайт</h2>
-                  <span class="slider__badge badge">Новинка!</span>
-                  <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-                  <div class="slider__price-container">
-                    <p class="slider__price"><s>295₽</s> <b>225₽</b></p>
-                    <a class="slider__order button" href="#">Заказать</a>
+                  <div class="slider__text-container slider__text-container--current">
+                    <h2 class="slider__title">Декаф Флэт Уайт</h2>
+                    <span class="slider__badge badge">Новинка!</span>
+                    <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                    <div class="slider__price-container">
+                      <p class="slider__price"><s>295₽</s> <b>225₽</b></p>
+                      <a class="slider__order button" href="#">Заказать</a>
+                    </div>
                   </div>
-                </div>
-                <div class="slider__image slider__image--current">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
-                  <img
-                    src="img/decaf-flat-white-mobile.png"
-                    srcset="img/decaf-flat-white-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Декаф Флэт Уайт.">
-                </picture>
-                </div>
+                  <div class="slider__image slider__image--current">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.webp 1x, img/decaf-flat-white-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.webp 1x, img/decaf-flat-white-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/decaf-flat-white-mobile.webp 1x, img/decaf-flat-white-mobile@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/decaf-flat-white-desktop.png 1x, img/decaf-flat-white-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/decaf-flat-white-tablet.png 1x, img/decaf-flat-white-tablet@2x.png 2x">
+                      <img
+                        src="img/decaf-flat-white-mobile.png"
+                        srcset="img/decaf-flat-white-mobile@2x.png 2x"
+                        width="280"
+                        height="280"
+                        alt="Декаф Флэт Уайт.">
+                    </picture>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -169,7 +169,7 @@
               </li>
               <li class="about__item about__item--fit">
                 <h3 class="about__item-title">Удобство</h3>
-                <p class="about__description">Легко помещается и в карман, и в маленькую сумочку</p>
+                <p class="about__description">Легко помещается и в карман,<br> и в маленькую сумочку</p>
               </li>
               <li class="about__item about__item--energy">
                 <h3 class="about__item-title">Бодрость</h3>
@@ -177,7 +177,7 @@
               </li>
               <li class="about__item about__item--ecology">
                 <h3 class="about__item-title">Экологичность</h3>
-                <p class="about__description">Вся упаковка сделана из перерабатываемых материалов</p>
+                <p class="about__description">Вся упаковка сделана<br> из перерабатываемых материалов</p>
               </li>
             </ul>
           </div>
@@ -311,10 +311,10 @@
             <div class="catalog__sorting">
               <span class="catalog__filter-title">Сортировка:</span>
               <select class="catalog__select-control">
-                  <option value="default">по умолчанию</option>
-                  <option value="cheap">сначала дорогие</option>
-                  <option value="expensive">сначала дешёвые</option>
-                  <option value="expensive">высокий рейтинг</option>
+                  <option class="catalog__select-option catalog__select-option--selected" value="default">по умолчанию</option>
+                  <option class="catalog__select-option" value="cheap">сначала дорогие</option>
+                  <option class="catalog__select-option" value="expensive">сначала дешёвые</option>
+                  <option class="catalog__select-option" value="expensive">высокий рейтинг</option>
                 </select>
             </div>
             <div class="catalog__products products">
@@ -332,7 +332,7 @@
                       alt="Кофе без кофеина Декаф Флэт Уайт.">
                   </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>
@@ -352,7 +352,7 @@
                           alt="Кофе без кофеина Декаф Флэт Уайт.">
                       </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>
@@ -372,7 +372,7 @@
                           alt="Кофе без кофеина Декаф Флэт Уайт.">
                       </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>
@@ -392,7 +392,7 @@
                           alt="Кофе без кофеина Декаф Флэт Уайт.">
                       </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>
@@ -412,7 +412,7 @@
                           alt="Кофе без кофеина Декаф Флэт Уайт.">
                       </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>
@@ -432,7 +432,7 @@
                           alt="Кофе без кофеина Декаф Флэт Уайт.">
                       </picture>
                     <h3 class="products__card-title">Декаф Флэт Уайт</h3>
-                    <p class="products__card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="products__card-description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   </a>
                   <div class="products__card-container">
                     <b class="products__card-price">225₽</b>

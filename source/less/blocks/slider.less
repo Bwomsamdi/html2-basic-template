@@ -2,7 +2,7 @@
   background-color: #f3ebe1;
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
-    background: linear-gradient(to top, #ffffff 10%, #ffffff 30%, #f3ebe1 30%, #f3ebe1 90%);
+    background: linear-gradient(to top, #ffffff 10%, #ffffff 23%, #f3ebe1 23%, #f3ebe1 90%);
   }
 }
 
@@ -14,14 +14,14 @@
   padding-bottom: 60px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 80px;
+    padding-top: 55px;
     padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     flex-direction: row;
-    padding: 30px 40px 84px 65px;
+    padding: 30px 40px 80px 65px;
   }
 }
 
@@ -34,6 +34,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
     order: 0;
   }
 
@@ -57,45 +58,12 @@
   }
 }
 
-.slider__pagination {
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  .normalize-list();
-
-  @media (max-width: 1439px) {
-    .visually-hidden();
-  }
-}
-
-.slider__pagination-item {
-  margin-right: 8px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.slider__pagination-button {
-  width: 62px;
-  height: 4px;
-  background-color: #ffffff;
-  border: none;
-
-  &--current {
-    background-color: @color-accent;
-  }
-}
-
 .slider__title {
   font-size: 36px;
   line-height: 48px;
+  letter-spacing: 0.02em;
   margin: 0;
-  padding: 20px 20px 10px 20px;
+  padding: 25px 0 10px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 56px;
@@ -110,7 +78,7 @@
 
 .slider__badge {
   position: absolute;
-  top: 0;
+  top: 7px;
   right: 0;
   left: 0;
   margin: auto;
@@ -122,11 +90,14 @@
 
 .slider__text {
   margin: 0;
-  padding: 0 20px 20px 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 32px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,23 +117,26 @@
 }
 
 .slider__price {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 1;
   color: @color-accent;
   margin: 0;
   margin-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 22px;
+  }
+}
+
+.slider__price s {
+  padding-top: 2px;
 }
 
 .slider__price b {
   font-size: 20px;
   font-weight: 600;
   color: #333333;
-}
-
-.slider__button {
-  position: absolute;
-}
-
-&--prev {
-  left: 0;
+  padding-left: 6px;
 }
